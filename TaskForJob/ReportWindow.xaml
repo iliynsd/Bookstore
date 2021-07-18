@@ -1,0 +1,17 @@
+﻿<Window x:Class="TaskForJob.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskForJob"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="500" Width="800">
+    <Grid>
+        <WebBrowser x:Name="wb" Margin="0,40,52,142" HorizontalAlignment="Right" Width="686"/>
+        <Button x:Name="button_open" Content="Открыть файл xml" FontSize="20" HorizontalAlignment="Left" Margin="280,369,0,0" VerticalAlignment="Top" Height="67" Width="216" Click="button_open_Click"/>
+        <Popup x:Name="show_info" StaysOpen="False" Placement="Center">
+            <TextBlock x:Name="info" FontSize="13"/>
+        </Popup>
+
+    </Grid>
+</Window>

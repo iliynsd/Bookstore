@@ -1,0 +1,29 @@
+﻿<Window x:Class="TaskForJob.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskForJob"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="500" Width="800">
+
+    <Grid>
+        <Label Content="Добавление книги" FontSize="30" HorizontalAlignment="Left" Margin="247,10,0,0" VerticalAlignment="Top" Height="45" Width="264"/>
+        <Label Content="Введите название" FontSize="15" HorizontalAlignment="Left" Margin="116,87,0,0" VerticalAlignment="Top" Width="227" Height="38"/>
+        <TextBox x:Name="Title"  HorizontalAlignment="Left" Margin="362,87,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="38"/>
+        <TextBox x:Name="Authors" HorizontalAlignment="Left" Margin="362,149,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="38"/>
+        <TextBlock Text="Введите авторов через точку с запятой и пробел" FontSize="15" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top" Height="56" Width="291" TextWrapping="Wrap" TextAlignment="Center"/>
+        <Label Content="Введите категорию" FontSize="15" HorizontalAlignment="Left" Margin="90,210,0,0" VerticalAlignment="Top" Width="226" Height="38"/>
+        <Label Content="Введите цену" FontSize="15" HorizontalAlignment="Left" Margin="116,280,0,0" VerticalAlignment="Top" Width="227" Height="38"/>
+        <TextBox x:Name="Price" HorizontalAlignment="Left" Margin="362,280,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="38"/>
+        <TextBox x:Name="Category" HorizontalAlignment="Left" Margin="362,210,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="38"/>
+        <Label Content="Введите год" FontSize="15" HorizontalAlignment="Left" Margin="116,346,0,0" VerticalAlignment="Top" Width="227" Height="38"/>
+        <TextBox x:Name="Year" HorizontalAlignment="Left" Margin="362,346,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="38"/>
+        <Button x:Name="Button_add_book" Content="Добавить" HorizontalAlignment="Left" Margin="266,420,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="Button_add_book_Click"/>
+
+        <Popup  x:Name="ShowInfo" StaysOpen="False" Placement="Center" AllowsTransparency="True">
+            <TextBlock x:Name="Info" TextWrapping="Wrap" />
+        </Popup>
+        
+    </Grid>
+</Window>
